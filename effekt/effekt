@@ -1,3 +1,4 @@
+#Progam til dim af kabler
 print("skal der benyttes 70c kabel(tast 0) 90c kable (tast 1)")
 taller=int(input())
                #Taller bruges til checke om programmet skal stoppe(1) eller forsætte(0)
