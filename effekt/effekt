@@ -1,7 +1,9 @@
-#Progam til dim af kabler
-print("skal der benyttes 70c kabel(tast 0) 90c kable (tast 1)")
+#Progam til dim af kablertaller=int(input())
+#Taller bruges til checke om programmet skal stoppe(1) eller forsætte(0)
+
+print("70c tast 0, tast 1 for 90c og 3 for stop ")
 taller=int(input())
-               #Taller bruges til checke om programmet skal stoppe(1) eller forsætte(0)
+
 while taller == 0:
     print("Indtast effektforbrug på brugsgenstanden")
     P = int(input())        # Indtast effektforbruget
@@ -36,3 +38,7 @@ while taller == 1:
         print('For stor effekt til denne beregning')
     print("70c tast 0, tast 1 for 90c og 3 for stop ")
     taller=int(input())
+
+while taller == 3:
+    print("Nu stopper programmet")
+    exit(0)
