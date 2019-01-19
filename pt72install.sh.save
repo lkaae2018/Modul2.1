@@ -1,0 +1,7 @@
+echo Download Packet Tracer for Linux inden installationen starter!!
+echo den kan findes på følgende adresse: https://drive.google.com/file/d/1BQNYBCwADYlOpJ4gYA9rTl2U14j5RpUE/view
+mkdir PT72Installer
+sudo tar xvzf 'Packet Tracer 7.2 for Linux 64 bit.tar.gz' -C PT72Installer
+cd PT72Installer
+./install
+sudo reboot
