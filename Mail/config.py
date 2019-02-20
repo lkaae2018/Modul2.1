@@ -1,7 +1,7 @@
 # Husk at ændre opstætning af Googlemail, således eksterne App får lov til sende beskeder!!!!
 # Indtast Google mail konto navn nedenfor
-EMAIL_ADDRESS="lkaae15@gmail.com"
+EMAIL_ADDRESS="******@gmail.com"
 # Indtast password til Googlekonto
-PASSWORD="Miracs0075"
+PASSWORD="**********"
 # Indtast modtages Google mail konto navn nedenfor
-EMAIL_ADDRESS_rx="lkaae15@outlook.dk"
+EMAIL_ADDRESS_rx="****************"
