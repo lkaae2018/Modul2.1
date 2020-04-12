@@ -4,6 +4,7 @@ echo Nu er RPi opdateret!!
 echo
 echo
 echo SPI&VNC skal enables under interfaces!!
+sleep 5
 sudo raspi-config
 echo Nu installeres modulerne til PMOD & BME680 
 echo
@@ -15,6 +16,7 @@ sudo pip install designspark.pmod
 curl https://get.pimoroni.com/i2c | bash
 
 echo Nu installeres sw til BME680 luftkvalitetsmåler
+sleep 5
 echo
 
 
