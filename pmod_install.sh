@@ -11,7 +11,7 @@ echo
 
 sudo apt-get install python-pip python-dev libfreetype6-dev libjpeg-dev build-essential
 
-sudo pip install designspark.pmod
+sudo pip3 install designspark.pmod
 
 curl https://get.pimoroni.com/i2c | bash
 
