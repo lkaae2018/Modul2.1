@@ -7,8 +7,8 @@ echo
 if (($fts == 1)) ; then
 	echo Opdatering start!!!
 	sudo apt update
-	sudo apt upgrade
-	sudo apt autoremove
+	sudo apt upgrade -y
+	sudo apt autoremove -y
 else 
 	echo opdatering stopper!!
 	exit
