@@ -5,7 +5,7 @@ channel_id = 1049013 # PUT CHANNEL ID HERE
 write_key  = 'B530FR63JBR4S3MN' # PUT YOUR WRITE KEY HERE
 read_key   = 'BQE5HYPZ0YTXJULT' # PUT YOUR READ KEY HERE
 
-def thermometer():
+def thermometer(channel):
           
               
     try:
@@ -21,9 +21,9 @@ def thermometer():
         print ("connection failed")
         
 if __name__ == "__main__":
-    channel = thingspeak.Channel(id=channel_id, write_key=write_key ,read_key)
+    channel = thingspeak.Channel(id=channel_id, api_key=write_key)
     while True:
-        thermometer()
+        thermometer(channel)
         time.sleep(15)
  
 
