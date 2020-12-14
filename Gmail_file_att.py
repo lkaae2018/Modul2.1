@@ -3,6 +3,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+import calendar
+from datetime import datetime
+#from picamera import PiCamera
 mail_content = '''Hello,
 This is a test mail.
 In this mail we are sending some attachments.
@@ -10,9 +13,9 @@ The mail is sent using Python SMTP library.
 Thank You
 '''
 #The mail addresses and password
-sender_address = 'sender123@gmail.com'
-sender_pass = 'xxxxxxxx'
-receiver_address = 'receiver567@gmail.com'
+sender_address = 'lkaae15@gmail.com'
+sender_pass = 'Djh2020Miracs'
+receiver_address = 'webmaster@pensionmira.dk'
 #Setup the MIME
 message = MIMEMultipart()
 message['From'] = sender_address
@@ -21,7 +24,18 @@ message['Subject'] = 'A test mail sent by Python. It has an attachment.'
 #The subject line
 #The body and the attachments for the mail
 message.attach(MIMEText(mail_content, 'plain'))
-attach_file_name = 'TP_python_prev.pdf'
+
+d = datetime.today()
+
+date = str(d.month) + "_" + str(d.day) + "_" + str(d.year) + "_" + str(d.hour) + "_" + str(d.minute) + "_" + str(d.second)
+
+filename=date
+f=open(filename, "w")
+string=date+"\n"
+f.write(string)
+f.close()
+
+attach_file_name = filename
 attach_file = open(attach_file_name, 'rb') # Open the file as binary mode
 payload = MIMEBase('application', 'octate-stream')
 payload.set_payload((attach_file).read())

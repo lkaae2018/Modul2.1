@@ -1,12 +1,16 @@
 #Kan benyttes i forbindelse med lyskryds, køre over for rødt!!!!!
 import calendar
-import datetime
-from picamera import PiCamera
+from datetime import datetime
 
-camera=PiCamera()
+#from picamera import PiCamera
 
-d = datetime.today()
+#camera=PiCamera()
+d=datetime.today()
+#d = datetime.datetime.now()
 
-date = calender.month_name(d.month) + "_" + str(d.day) + "_" + str(d.year) + "_" + str(d.hour) + "_" + str(d.minute) + "_" + str(d.second)
+#date=calendar.month_name(d.month)
+print(d)
+date = calendar.month_name(d.month)
+#date = calendar.month_name(d.month) + "_" + str(d.day) + "_" + str(d.year) + "_" + str(d.hour) + "_" + str(d.minute) + "_" + str(d.second)
 
-camera.capture("/home/pi/" + date + ".jpg")
+
