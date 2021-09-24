@@ -2,7 +2,7 @@ import time;
 a=1
 tid=time.time()
 print ("tiden er:", tid)
-print("Grøn")
+print("Groen")
 
 while a==0:
     if time.time()-tid >=3:
@@ -17,7 +17,7 @@ while a==1:
    if time.time()-tid >=1:
        a=2
        tid=time.time()
-       print("Rød")
+       print("Raed")
    else:
         a=1
 
@@ -26,7 +26,7 @@ while a==2:
     if time.time()-tid>=4:
         a=0
         tid=time.time()
-        print("Grøn")
+        print("Groen")
     else:
         a=2
 
